@@ -1,98 +1,100 @@
-# balkan-clutch
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <meta charset="UTF-8">
-    <title>Balkan Clutch | CS2 Community Server</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-            color: white;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balkan Clutch CS2 Server</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #1e1e1e, #111111);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+    }
 
-        header {
-            padding: 40px 20px;
-            background: #111;
-            border-bottom: 3px solid red;
-        }
+    h1 {
+        font-size: 3em;
+        color: #ff4500;
+        margin-bottom: 10px;
+        animation: glow 2s infinite alternate;
+    }
 
-        h1 {
-            font-size: 48px;
-            color: red;
-            margin: 0;
-        }
+    @keyframes glow {
+        0% { text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500; }
+        100% { text-shadow: 0 0 20px #ff6347, 0 0 30px #ff6347; }
+    }
 
-        .btn {
-            display: inline-block;
-            margin: 15px;
-            padding: 12px 25px;
-            background: red;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    .container {
+        background-color: rgba(30,30,30,0.85);
+        padding: 40px 60px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #ff4500;
+        animation: fadeIn 1.5s ease-in-out;
+    }
 
-        .btn:hover {
-            background: darkred;
-        }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 
-        section {
-            padding: 40px 20px;
-        }
+    .btn {
+        display: inline-block;
+        margin: 15px;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+        background: #ff4500;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
 
-        .box {
-            background: #222;
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px red;
-        }
+    .btn:hover {
+        background: #ff6347;
+        transform: scale(1.1);
+    }
 
-        footer {
-            padding: 20px;
-            background: #111;
-            border-top: 2px solid red;
-            font-size: 14px;
-        }
-    </style>
+    p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    a {
+        color: #1e90ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 20px;
+        font-size: 0.9em;
+        color: #888;
+    }
+</style>
 </head>
 <body>
-
-<header>
-    <h1>Balkan Clutch</h1>
-    <p>Najbolji CS2 Community Server na Balkanu</p>
-    <a href="#connect" class="btn">🔗 Poveži se</a>
-    <a href="https://discord.gg/UBACI_TVOJ_LINK" class="btn">💬 Discord</a>
-</header>
-
-<section>
-    <div class="box">
-        <h2>🎮 O Serveru</h2>
-        <p>• 128 Tick<br>
-           • Skin Sistem<br>
-           • Rank Sistem<br>
-           • Aktivni Admini<br>
-           • Eventovi i Turniri</p>
+    <h1>Balkan Clutch CS2</h1>
+    <div class="container">
+        <p>🎮 IP Servera: <a href="steam://connect/212.100.172.160:29376">212.100.172.160:29376</a></p>
+        <p>💬 Discord: <a href="https://discord.gg/ZM2u4xqN" target="_blank">Pridruži se našem Discordu</a></p>
+        <a class="btn" href="steam://connect/212.100.172.160:29376">Poveži se odmah</a>
+        <a class="btn" href="https://discord.gg/ZM2u4xqN" target="_blank">Idi na Discord</a>
     </div>
-
-    <div class="box" id="connect">
-        <h2>📡 Kako da se povežeš?</h2>
-        <p>Otvorite CS2 konzolu (~) i ukucajte:</p>
-        <h3 style="color:red;">connect 123.123.123.123:27015</h3>
-        <p>(Ovde ubaci IP kada kupiš hosting)</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 Balkan Clutch Community | Sva prava zadržana
-</footer>
-
+    <div class="footer">© 2026 Balkan Clutch CS2 Server</div>
 </body>
 </html>
